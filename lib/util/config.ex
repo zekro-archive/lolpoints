@@ -15,7 +15,7 @@ defmodule Conf do
     if not File.exists?(file) do
       Logger.error("CONFIG :: Config file was not found - creating default config at '#{file}'")
       case File.write(file, def_conf()) do
-        {:err, err} ->
+        {:error, err} ->
           Logger.error("CONFIG :: Failed creating default config file: #{err}")
         :ok -> 
           nil
