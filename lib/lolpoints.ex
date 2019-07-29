@@ -1,0 +1,2 @@
+defmodule LoLPoints do
+end
